@@ -4,9 +4,9 @@ This repository contains the implementation for the "SignFormer-GCN : Continuous
 
 In this repository, we implement sign language translation across three distinct datasets:
 
-- Bangla Sign Language (BdSL) Translation: Code is organized in the Bangla folder, utilizing the BornilDB v1.0 dataset.
-- American Sign Language (ASL) Translation: Code is organized in the English folder, utilizing the How2Sign dataset.
-- German Sign Language (DGS) Translation: Code is organized in the German folder, utilizing the RWTH-PHOENIX-2014T dataset.
+- Bangla Sign Language (BdSL) Translation: Code is organized in the Bangla folder, utilizing the BornilDB v1.0[1] dataset.
+- American Sign Language (ASL) Translation: Code is organized in the English folder, utilizing the How2Sign[2] dataset.
+- German Sign Language (DGS) Translation: Code is organized in the German folder, utilizing the RWTH-PHOENIX-2014T[3] dataset.
 
 To perform a specific translation task, navigate to the corresponding folder using the following commands:
 - For BdSL Translation: ```cd Bangla/slt_how2sign_wicv2023/```
@@ -120,9 +120,15 @@ SUBSET: cvpr23.fairseq.i3d.test.how2sign
 SPM_MODEL: path/to/cvpr23.train.how2sign.unigram7000_lowercased.model
 ```
 
-Cite the code: [![DOI](https://zenodo.org/badge/778111209.svg)](https://doi.org/10.5281/zenodo.13937815)
-
 Then, run the following command for evaluation:
 ```
 task generate
 ```
+
+**Citations**
+
+Cite the code: [![DOI](https://zenodo.org/badge/778111209.svg)](https://doi.org/10.5281/zenodo.13937815)
+
+[1] Dhruvo, S.E., Rahman, M.A., Mandal, M.K., Shihab, M.I.H., Ansary, A.A., Shithi, K.F., Khanom, S., Akter, R., Arib, S.H., Ansary, M.N. and Mehnaz, S., 2023. Bornil: An open-source sign language data crowdsourcing platform for AI enabled dialect-agnostic communication. arXiv preprint arXiv:2308.15402.
+[2] Duarte, A., Palaskar, S., Ventura, L., Ghadiyaram, D., DeHaan, K., Metze, F., Torres, J. and Giro-i-Nieto, X., 2021. How2sign: a large-scale multimodal dataset for continuous american sign language. In Proceedings of the IEEE/CVF conference on computer vision and pattern recognition (pp. 2735-2744).
+[3] Camgoz, N.C., Hadfield, S., Koller, O., Ney, H. and Bowden, R., 2018. Neural sign language translation. In Proceedings of the IEEE conference on computer vision and pattern recognition (pp. 7784-7793).
