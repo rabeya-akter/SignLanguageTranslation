@@ -120,6 +120,8 @@ SUBSET: cvpr23.fairseq.i3d.test.how2sign
 SPM_MODEL: path/to/cvpr23.train.how2sign.unigram7000_lowercased.model
 ```
 
+Cite the code: [![DOI](https://zenodo.org/badge/778111209.svg)](https://doi.org/10.5281/zenodo.13937815)
+
 Then, run the following command for evaluation:
 ```
 task generate
